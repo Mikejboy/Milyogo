@@ -131,21 +131,6 @@ export default function ContactPage() {
                 />
               </div>
 
-              {/* Phone */}
-              <div>
-                <label htmlFor="phone" className="block text-sm font-semibold text-gray-900 mb-2">
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2D7A3E] focus:border-transparent"
-                  placeholder="0701234567"
-                />
-              </div>
-
               {/* Message */}
               <div>
                 <label htmlFor="message" className="block text-sm font-semibold text-gray-900 mb-2">

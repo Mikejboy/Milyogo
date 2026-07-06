@@ -1,16 +1,29 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { MessageCircle } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-[#F5F5F0] border-b border-gray-200">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-        <Link href="/" className="flex items-center space-x-2">
-          <div className="w-10 h-10 rounded-full bg-[#2D7A3E] flex items-center justify-center text-white font-bold">
-            M
+        <Link href="/" className="flex items-center space-x-3 group">
+          {/* Yogurt Cup Logo */}
+          <div className="relative w-12 h-12 flex items-center justify-center">
+            <Image
+              src="/milyogo-logo.png"
+              alt="Milyogo yogurt logo"
+              width={48}
+              height={48}
+              className="w-full h-full object-contain"
+            />
           </div>
-          <span className="text-xl font-bold text-gray-900">Milyogo</span>
+          
+          {/* Text Logo */}
+          <div className="flex flex-col leading-tight">
+            <span className="text-2xl font-black text-[#2D7A3E] tracking-tight">Milyogo</span>
+            <span className="text-xs font-semibold text-[#F4D03F] tracking-widest">FRESH YOGURT</span>
+          </div>
         </Link>
 
         <div className="hidden md:flex items-center space-x-8">

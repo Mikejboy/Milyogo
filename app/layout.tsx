@@ -1,6 +1,7 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
+import Watermark from '@/components/watermark'
 
 export const metadata: Metadata = {
   title: 'Milyogo - Fresh Yogurt Made in Nigeria',
@@ -39,8 +40,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-[#F5F5F0]">
-      <body className="antialiased">
-        {children}
+      <body className="antialiased relative">
+        <Watermark />
+        <div className="relative z-10">
+          {children}
+        </div>
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
