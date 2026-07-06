@@ -9,7 +9,14 @@ import { Star, MessageCircle } from 'lucide-react'
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#F5F5F0]">
+    <div className="min-h-screen bg-white relative" style={{
+      backgroundImage: 'url(/milyogo-watermark.png)',
+      backgroundRepeat: 'repeat',
+      backgroundSize: '350px 350px',
+      backgroundAttachment: 'fixed',
+    }}>
+      <div className="absolute inset-0 bg-white opacity-85 pointer-events-none"></div>
+      <div className="relative z-10">
       <Header />
 
       {/* Hero Section */}
@@ -26,7 +33,7 @@ export default function Home() {
             </h1>
 
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Milyogo blends creamy, all-natural yogurt with real fruit and live cultures. No artificial nonsense, just bold, wholesome goodness in every spoon.
+              Milyogo blends creamy, all-natural yogurt with real fruit and live cultures. No artificial additives, just bold, wholesome goodness in every spoon.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -178,6 +185,7 @@ export default function Home() {
       </section>
 
       <Footer />
+      </div>
     </div>
   )
 }

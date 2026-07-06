@@ -29,7 +29,14 @@ export default function BenefitsPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-[#F5F5F0]">
+    <div className="min-h-screen bg-white relative" style={{
+      backgroundImage: 'url(/milyogo-watermark.png)',
+      backgroundRepeat: 'repeat',
+      backgroundSize: '350px 350px',
+      backgroundAttachment: 'fixed',
+    }}>
+      <div className="absolute inset-0 bg-white opacity-85 pointer-events-none"></div>
+      <div className="relative z-10">
       <Header />
 
       {/* Page Header */}
@@ -85,45 +92,8 @@ export default function BenefitsPage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 mt-8">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900">What Our Customers Say</h2>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[
-            {
-              text: "I've been buying Milyogo for 6 months now. My digestion has never been better!",
-              author: 'Chioma A.',
-              location: 'Lagos',
-            },
-            {
-              text: 'The best part is knowing exactly what goes into my family\'s yogurt. No preservatives, just goodness.',
-              author: 'Tunde B.',
-              location: 'Abuja',
-            },
-            {
-              text: 'Finally, a local yogurt brand that tastes amazing AND is good for you. Proud to support Nigeria!',
-              author: 'Zainab M.',
-              location: 'Ibadan',
-            },
-          ].map((testimonial, i) => (
-            <div key={i} className="bg-white rounded-2xl p-8 shadow-lg">
-              <div className="flex items-center mb-4">
-                {[...Array(5)].map((_, j) => (
-                  <span key={j} className="text-[#F4D03F] text-xl">★</span>
-                ))}
-              </div>
-              <p className="text-gray-700 text-lg mb-6">"{testimonial.text}"</p>
-              <div className="font-semibold text-gray-900">{testimonial.author}</div>
-              <p className="text-gray-600">{testimonial.location}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       <Footer />
+      </div>
     </div>
   )
 }

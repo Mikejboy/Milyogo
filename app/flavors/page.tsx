@@ -12,7 +12,7 @@ export default function FlavorsPage() {
       description: 'Sweet, sun-ripened strawberries swirled into creamy yogurt.',
       image: '/strawberry-yogurt.png',
       badge: 'Bestseller',
-      badgeColor: 'bg-[#2D7A3E]',
+      badgeColor: 'bg-[#0EA5E9]',
       textColor: 'text-white',
     },
     {
@@ -20,15 +20,15 @@ export default function FlavorsPage() {
       description: 'Juicy tropical mango with a smooth, velvety finish.',
       image: '/mango-yogurt.png',
       badge: 'New',
-      badgeColor: 'bg-[#F4D03F]',
-      textColor: 'text-gray-900',
+      badgeColor: 'bg-[#0EA5E9]',
+      textColor: 'text-white',
     },
     {
       name: 'Wild Blueberry',
       description: 'Tangy blueberries packed with antioxidant goodness.',
       image: '/blueberry-yogurt.png',
       badge: 'Classic',
-      badgeColor: 'bg-[#2D7A3E]',
+      badgeColor: 'bg-[#0EA5E9]',
       textColor: 'text-white',
     },
     {
@@ -36,7 +36,7 @@ export default function FlavorsPage() {
       description: 'Pure Greek-style yogurt finished with golden honey.',
       image: '/honey-yogurt.png',
       badge: 'Classic',
-      badgeColor: 'bg-[#2D7A3E]',
+      badgeColor: 'bg-[#0EA5E9]',
       textColor: 'text-white',
     },
     {
@@ -44,7 +44,7 @@ export default function FlavorsPage() {
       description: 'Creamy coconut flavor with tropical vibes.',
       image: '/coconut-yogurt.png',
       badge: 'Popular',
-      badgeColor: 'bg-[#2D7A3E]',
+      badgeColor: 'bg-[#0EA5E9]',
       textColor: 'text-white',
     },
     {
@@ -52,15 +52,15 @@ export default function FlavorsPage() {
       description: 'Tart and tangy passion fruit with smooth yogurt.',
       image: '/passion-fruit-yogurt.png',
       badge: 'New',
-      badgeColor: 'bg-[#F4D03F]',
-      textColor: 'text-gray-900',
+      badgeColor: 'bg-[#0EA5E9]',
+      textColor: 'text-white',
     },
     {
       name: 'Mixed Berries',
       description: 'A medley of fresh berries in every spoonful.',
       image: '/mixed-berries-yogurt.png',
       badge: 'Popular',
-      badgeColor: 'bg-[#2D7A3E]',
+      badgeColor: 'bg-[#0EA5E9]',
       textColor: 'text-white',
     },
     {
@@ -68,13 +68,21 @@ export default function FlavorsPage() {
       description: 'Nutty pistachio flavor for the adventurous palate.',
       image: '/pistachio-yogurt.png',
       badge: 'Seasonal',
-      badgeColor: 'bg-[#F4D03F]',
-      textColor: 'text-gray-900',
+      badgeColor: 'bg-[#0EA5E9]',
+      textColor: 'text-white',
     },
   ]
 
   return (
-    <div className="min-h-screen bg-[#F5F5F0]">
+    <div className="min-h-screen bg-white relative" style={{
+      backgroundImage: 'url(/milyogo-watermark.png)',
+      backgroundRepeat: 'repeat',
+      backgroundSize: '350px 350px',
+      backgroundAttachment: 'fixed',
+      backgroundOpacity: 0.15,
+    }}>
+      <div className="absolute inset-0 bg-white opacity-85 pointer-events-none"></div>
+      <div className="relative z-10">
       <Header />
 
       {/* Page Header */}
@@ -119,6 +127,7 @@ export default function FlavorsPage() {
       </section>
 
       <Footer />
+      </div>
     </div>
   )
 }

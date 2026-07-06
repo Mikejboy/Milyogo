@@ -92,7 +92,7 @@ Total Amount: ₦6,000
   }
 
   return (
-    <div className="min-h-screen bg-[#F5F5F0]">
+    <div className="min-h-screen bg-white">
       <Header />
 
       <section className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -210,7 +210,7 @@ Total Amount: ₦6,000
           {/* Order Button */}
           <Button
             type="submit"
-            className="w-full bg-[#2D7A3E] hover:bg-[#1f5629] text-white py-4 text-lg font-bold rounded-lg transition-colors"
+            className="w-full bg-[#0EA5E9] hover:bg-[#0284C7] text-white py-4 text-lg font-bold rounded-lg transition-colors"
           >
             Place Order Now
           </Button>

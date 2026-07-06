@@ -19,13 +19,20 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F5F5F0]">
+    <div className="min-h-screen bg-white relative" style={{
+      backgroundImage: 'url(/milyogo-watermark.png)',
+      backgroundRepeat: 'repeat',
+      backgroundSize: '350px 350px',
+      backgroundAttachment: 'fixed',
+    }}>
+      <div className="absolute inset-0 bg-white opacity-85 pointer-events-none"></div>
+      <div className="relative z-10">
       <Header />
 
       {/* Page Header */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center">
-          <p className="text-[#2D7A3E] font-semibold text-sm uppercase tracking-wide">Get in Touch</p>
+          <p className="text-[#0EA5E9] font-semibold text-sm uppercase tracking-wide">Get in Touch</p>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mt-2">Contact Milyogo</h1>
           <p className="text-gray-700 mt-4 text-lg max-w-2xl mx-auto">
             Have questions or feedback? We&apos;d love to hear from you. Reach out anytime!
@@ -43,7 +50,7 @@ export default function ContactPage() {
             <div className="space-y-8">
               {/* Phone */}
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-[#2D7A3E] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-12 h-12 bg-[#0EA5E9] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -121,14 +128,14 @@ export default function ContactPage() {
                 <label htmlFor="email" className="block text-sm font-semibold text-gray-900 mb-2">
                   Email Address
                 </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2D7A3E] focus:border-transparent"
-                  placeholder="your@email.com"
-                />
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0EA5E9] focus:border-transparent"
+                    placeholder="your@email.com"
+                  />
               </div>
 
               {/* Message */}
@@ -166,6 +173,7 @@ export default function ContactPage() {
       </section>
 
       <Footer />
+      </div>
     </div>
   )
 }

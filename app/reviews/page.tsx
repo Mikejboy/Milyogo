@@ -89,7 +89,14 @@ export default function ReviewsPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-[#F5F5F0]">
+    <div className="min-h-screen bg-white relative" style={{
+      backgroundImage: 'url(/milyogo-watermark.png)',
+      backgroundRepeat: 'repeat',
+      backgroundSize: '350px 350px',
+      backgroundAttachment: 'fixed',
+    }}>
+      <div className="absolute inset-0 bg-white opacity-85 pointer-events-none"></div>
+      <div className="relative z-10">
       <Header />
 
       {/* Page Header */}
@@ -132,38 +139,14 @@ export default function ReviewsPage() {
                   <p className="font-semibold text-gray-900">{review.name}</p>
                   <p className="text-sm text-gray-600">{review.location}</p>
                 </div>
-                <p className="text-xs text-gray-500">{review.date}</p>
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="bg-[#2D7A3E] text-white py-16 mt-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold mb-2">12,000+</div>
-              <p className="text-green-100">Happy Customers</p>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2">4.9★</div>
-              <p className="text-green-100">Average Rating</p>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2">100%</div>
-              <p className="text-green-100">Natural Ingredients</p>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2">365</div>
-              <p className="text-green-100">Days Fresh</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <Footer />
+      </div>
     </div>
   )
 }
