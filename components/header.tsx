@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
+import { MessageCircle } from 'lucide-react'
 
 export default function Header() {
   return (
@@ -27,9 +28,12 @@ export default function Header() {
           </Link>
         </div>
 
-        <Button className="bg-[#2D7A3E] hover:bg-[#1f5629] text-white">
-          Order Now
-        </Button>
+        <a href="https://wa.me/2347075049214?text=Hello%20Milyogo!%20I%20want%20to%20place%20an%20order.%20Please%20send%20me%20your%20product%20catalog%20and%20pricing." target="_blank" rel="noopener noreferrer">
+          <Button className="bg-[#2D7A3E] hover:bg-[#1f5629] text-white flex items-center gap-2">
+            <MessageCircle className="w-4 h-4" />
+            Order Now
+          </Button>
+        </a>
       </nav>
     </header>
   )

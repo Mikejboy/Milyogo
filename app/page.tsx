@@ -5,7 +5,7 @@ import Footer from '@/components/footer'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Star } from 'lucide-react'
+import { Star, MessageCircle } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -168,9 +168,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-4">100% Natural Ingredients</h2>
           <p className="text-lg mb-8 text-green-100">No artificial flavors, no preservatives, just pure goodness.</p>
-          <Button className="bg-[#F4D03F] text-gray-900 hover:bg-yellow-300 px-8 py-3 text-lg font-bold">
-            Order Now
-          </Button>
+          <a href="https://wa.me/2347075049214?text=Hello%20Milyogo!%20I%20want%20to%20place%20an%20order.%20Please%20send%20me%20your%20product%20catalog%20and%20pricing." target="_blank" rel="noopener noreferrer">
+            <Button className="bg-[#F4D03F] text-gray-900 hover:bg-yellow-300 px-8 py-3 text-lg font-bold flex items-center gap-2">
+              <MessageCircle className="w-5 h-5" />
+              Order Now
+            </Button>
+          </a>
         </div>
       </section>
 
