@@ -39,13 +39,13 @@ export default function Footer() {
             <h3 className="font-bold text-lg mb-4">Contact Us</h3>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <a href="tel:+2347075049214" className="hover:text-[#F4D03F] transition-colors">
-                  Phone: 0707 504 9214
+                <a href="tel:+11234567890" className="hover:text-[#F4D03F] transition-colors">
+                  Phone: (123) 456-7890
                 </a>
               </li>
               <li>
-                <a href="mailto:3596jamesmichael@gmail.com" className="hover:text-[#F4D03F] transition-colors">
-                  Email: 3596jamesmichael@gmail.com
+                <a href="mailto:info@clientbusiness.com" className="hover:text-[#F4D03F] transition-colors">
+                  Email: info@clientbusiness.com
                 </a>
               </li>
             </ul>
@@ -55,10 +55,10 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-lg mb-4">Hours</h3>
             <p className="text-gray-400">
-              Monday - Saturday: 8:00 AM - 6:00 PM
+              Monday - Friday: 9:00 AM - 5:00 PM
             </p>
             <p className="text-gray-400 mt-2">
-              Block 131 flat 3, Abesan, Lagos, Nigeria
+              123 Business Street, City, Country
             </p>
           </div>
         </div>

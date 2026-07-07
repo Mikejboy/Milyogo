@@ -68,8 +68,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-gray-900">Phone</h3>
-                  <a href="tel:+2347075049214" className="text-[#2D7A3E] hover:underline text-lg">
-                    0707 504 9214
+                  <a href="tel:+11234567890" className="text-[#2D7A3E] hover:underline text-lg">
+                    (123) 456-7890
                   </a>
                 </div>
               </div>
@@ -81,8 +81,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-gray-900">Email</h3>
-                  <a href="mailto:3596jamesmichael@gmail.com" className="text-[#2D7A3E] hover:underline text-lg">
-                    3596jamesmichael@gmail.com
+                  <a href="mailto:info@clientbusiness.com" className="text-[#2D7A3E] hover:underline text-lg">
+                    info@clientbusiness.com
                   </a>
                 </div>
               </div>
@@ -94,7 +94,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-gray-900">Address</h3>
-                  <p className="text-gray-700 text-lg">Block 131 flat 3, Abesan, Lagos, Nigeria</p>
+                  <p className="text-gray-700 text-lg">123 Business Street, City, Country</p>
                 </div>
               </div>
 
@@ -105,7 +105,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-gray-900">Hours</h3>
-                  <p className="text-gray-700 text-lg">Monday - Saturday: 8:00 AM - 6:00 PM</p>
+                  <p className="text-gray-700 text-lg">Monday - Friday: 9:00 AM - 5:00 PM</p>
                 </div>
               </div>
             </div>
